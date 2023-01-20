@@ -1,4 +1,4 @@
-# java-complete-course
+# Curso Java Completo - prof Nelio Alves - udemy
 
 Curso completo de Java e OO, UML, JDBC, JavaFX, Spring Boot, JPA, Hibernate, MySQL, MongoDB.
 Esse repository contém os exercícios e projetos que desenvolvi ao longo deste curso.
