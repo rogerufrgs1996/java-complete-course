@@ -24,6 +24,11 @@ public abstract class Person {
         this.annualIncome = annualIncome;
     }
     public abstract double tax();
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append(name + ": $ " + String.format("%.2f", tax()));
+        return sb.toString();
+    }
     
 
 
