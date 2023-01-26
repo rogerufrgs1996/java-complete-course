@@ -1,18 +1,18 @@
-## Getting Started
+# Fixation exercise of polymorphism and abstract classes
+# TAX program
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# comand
+Build a program to read the data of N contributors (N provide by user), which could be Individual person or legal entity/company.
+And after that, show the value of the tax payed for each one of the contributors as well as all tax raised.
 
-## Folder Structure
+Data:
+Individual person: Name, annual income, health expenses
+Legal entity: Name, annual income, number of employees
 
-The workspace contains two folders by default, where:
+Calculation rules:
+Individual person: persons whom have income bellow 20000 pay 15%. The other pay 25%. But also half of health expenses are discounted of the total tax.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Legal entity: Companies pay 16% but if they have more than 10 employees, pay just 14%
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).

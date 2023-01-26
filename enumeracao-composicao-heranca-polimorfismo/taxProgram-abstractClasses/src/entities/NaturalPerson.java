@@ -21,10 +21,20 @@ public class NaturalPerson extends Person{
     @Override
     public double tax(){
         if(getAnnualIncome()<20000){
-            return getAnnualIncome()*0.15 - (healthExpenses*0.5);
+            if(getAnnualIncome()*0.15 < healthExpenses){
+                return 0;
+            }
+            else{
+                return getAnnualIncome()*0.15 - (healthExpenses*0.5);
+            }
         }
         else{
-            return getAnnualIncome()*0.25 - (healthExpenses*0.5);
+            if(getAnnualIncome()*0.25 < healthExpenses){
+                return 0;
+            }
+            else{
+                return getAnnualIncome()*0.25 - (healthExpenses*0.5);
+            }
         }
     }
     
